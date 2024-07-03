@@ -11,137 +11,78 @@ class _IntrooPageState extends State<IntrooPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: PageView(
         children: [
-          ////////////////first page
           Container(
+            margin: EdgeInsets.all(20),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Center(
-                  child: Image.asset(
-                    "assets/images/fasfud.jpg",
-                    fit: BoxFit.cover,
-                  ),
+                Image(
+                  height: 380,
+                  width: 380,
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/fresh_food.jpg"),
                 ),
-                Container(
-                  padding: EdgeInsets.all(70),
-                  child: Container(
-                    child: Center(
-                      child: Text(
-                        "Fresh Food",
-                        style: TextStyle(
-                            fontSize: 55,
-                            color: Colors.black,
-                            fontWeight: FontWeight.w700),
-                      ),
-                    ),
-                  ),
+
+                SizedBox(
+                  height: 35,
                 ),
-                Container(
-                    child: Container(
-                  child: Center(
-                    child: Text(
-                      "Lorem ipsum dolor sit amet, "
-                      "consecteturar "
-                      "adipisicing elit. "
-                      "Aenean commondo ilgula egut dolor.",
-                      style: TextStyle(
-                          fontSize: 25, fontWeight: FontWeight.normal),
-                    ),
-                  ),
-                ))
+                Text("Fresh Food",style: TextStyle(fontSize: 40),),
+                SizedBox(
+                  height: 10,
+                ),
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit,Aenean commodo ligula eget dolor. ",style: TextStyle(fontSize: 12), textAlign: TextAlign.center,),
               ],
             ),
           ),
 
-          ///////////////second page
           Container(
-            child: Center(
-              child: Column(
-                children: [
-                  Container(
-                    child: Image.asset(
-                      "assets/images/deliv.jpg",
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(70),
-                    child: Center(
-                      child: Column(
-                        children: [
-                          Text(
-                            "Fast Delivery",
-                            style: TextStyle(
-                                fontSize: 55, fontWeight: FontWeight.w700),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        Center(
-                          child: Text(
-                            "Lorem ipsum dolor sit amet, "
-                            "consecteturar adipisicing elit. "
-                            "Aenean commondo ilgula egut dolor.",
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.normal),
-                          ),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              ),
+            margin: EdgeInsets.all(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image(
+                  height: 380,
+                  width: 380,
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/fast_delivery.jpg"),
+                ),
+                SizedBox(
+                  height: 35,
+                ),
+                Text("Fast Delivery",style: TextStyle(fontSize: 40),),
+                SizedBox(
+                  height: 10,
+                ),
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit,Aenean commodo ligula eget dolor. ",style: TextStyle(fontSize: 12),textAlign: TextAlign.center,),
+              ],
             ),
           ),
 
-          /////////Third page
           Container(
+            margin: EdgeInsets.all(20),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Center(
-                  child: Image.asset(
-                    "assets/images/payment.webp",
-                    fit: BoxFit.cover,
-                  ),
+                Image(
+                  height: 380,
+                  width: 380,
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/pay.jpg"),
                 ),
-                Container(
-                  padding: EdgeInsets.only(top: 150, left: 70, right: 70, bottom: 70),
-                  child: Column(
-                    children: [
-                      Center(
-                        child: Text(
-                          "Easy Payment",
-                          style: TextStyle(
-                              fontSize: 55, fontWeight: FontWeight.w700),
-                        ),
-                      )
-                    ],
-                  ),
+                SizedBox(
+                  height: 35,
                 ),
-                Container(
-                  child: Column(
-                    children: [
-                      Center(
-                        child: Text(
-                          "Lorem ipsum dolor sit amet, "
-                          "consecteturar adipisicing elit. "
-                          "Aenean commondo ilgula egut dolor.",
-                          style: TextStyle(
-                              fontSize: 25, fontWeight: FontWeight.normal),
-                        ),
-                      )
-                    ],
-                  ),
+                Text("Easy Payment",style: TextStyle(fontSize: 35),),
+                SizedBox(
+                  height: 10,
                 ),
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit,Aenean commodo ligula eget dolor. ",style: TextStyle(fontSize: 12), textAlign: TextAlign.center,),
               ],
             ),
-          )
+          ),
+
         ],
       ),
     );
